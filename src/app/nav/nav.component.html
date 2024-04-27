@@ -9,23 +9,25 @@
     position="end"
   >
     <mat-nav-list class="nav-list">
-      <a mat-list-item href="#">Dostepne modele</a>
-      <a mat-list-item href="#">Przetestuj mnie</a>
-      <a mat-list-item href="#">O nas</a>
+      <a mat-list-item href="/models">Dostepne modele</a>
+      <a mat-list-item href="/testing">Przetestuj mnie</a>
+      <a mat-list-item href="/about">O nas</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <img
-        class="header-logo"
-        src="https://www.exagrid.com/wp-content/uploads/2020/09/exagrid-logo.png"
-        alt="logo"
-      />
+      <a href="/">
+        <img
+          class="header-logo"
+          src="https://www.exagrid.com/wp-content/uploads/2020/09/exagrid-logo.png"
+          alt="logo"
+        />
+      </a>
       <span class="example-spacer"></span>
       <mat-nav-list class="nav-menu" *ngIf="!(isHandset$ | async)">
-        <a mat-list-item href="#">Dostepne modele</a>
-        <a mat-list-item href="#">Przetestuj mnie</a>
-        <a mat-list-item href="#">O nas</a>
+        <a mat-list-item href="/models">Dostepne modele</a>
+        <a mat-list-item href="/testing">Przetestuj mnie</a>
+        <a mat-list-item href="/about">O nas</a>
       </mat-nav-list>
       <!-- <span class="example-spacer"></span> -->
       <button
