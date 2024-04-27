@@ -1,0 +1,23 @@
+.feature {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(80% - 10px);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 3rem;
+  // border: 1px solid red;
+  &__title {
+    color: rgb(77, 168, 45);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 40px;
+    font-feature-settings: "lnum";
+    text-align: left;
+  }
+  &__description {
+    color: rgb(10, 10, 10);
+    text-align: left;
+  }
+}

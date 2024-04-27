@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  display: flex;
+  background-color: rgb(247, 249, 253);
+  flex-direction: row-reverse;
+
+  &__video {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 723px;
+    min-width: 550px;
+    background-image: url("https://www.exagrid.com/wp-content/uploads/2020/09/exagrid-recovery-20x-faster-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 394px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 2rem;
+
+    & > h2 {
+      color: #18467f;
+      font-weight: 400;
+      line-height: 1.2;
+      font-size: 3.5rem;
+    }
+    & > span {
+      color: rgb(10, 10, 10);
+    }
+
+    & > button {
+      all: unset;
+      margin-top: 3rem;
+      cursor: pointer;
+      box-sizing: border-box;
+      padding: 0.625rem 1rem;
+      border: 4px solid #4da82d;
+      text-transform: uppercase;
+      background: none;
+      color: #4da82d;
+      font-weight: 800;
+      background-color: none;
+      font-size: 1rem;
+      letter-spacing: 0.025rem;
+      &:hover {
+        background: #4da82d;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 638px) {
+  .container {
+    flex-direction: column;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      & > h2 {
+        margin: 1rem 1rem;
+      }
+      & > span {
+        color: rgb(10, 10, 10);
+        margin: 0px 1rem;
+      }
+      & > button {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
