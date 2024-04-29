@@ -58,7 +58,7 @@
   min-width: 5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .sidenav {
     display: none;
   }
@@ -67,7 +67,9 @@
   .mat-toolbar.mat-primary {
     padding: 1rem 2rem;
   }
-  .sidenav {
-    display: none;
+}
+@media (max-width: 1198px) {
+  .mat-toolbar.mat-primary {
+    padding: 1rem 2rem;
   }
 }
