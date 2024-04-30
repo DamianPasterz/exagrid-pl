@@ -40,18 +40,19 @@
 @media (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
-    background: transparent;
+
     &__text {
       margin-left: 0px;
       background: transparent;
 
       & > p {
-        padding-left: 5rem;
+        padding-left: 2rem;
         color: white;
         font-weight: 400;
         line-height: 1.2;
         font-size: 3rem;
-        margin-bottom: 4rem;
+        margin-bottom: 0.1rem;
+        padding-bottom: 0;
       }
     }
     &__image {

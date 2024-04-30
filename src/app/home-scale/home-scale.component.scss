@@ -8,7 +8,8 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    min-width: 550px;
+    min-width: 723px;
+
     height: 500px;
     background-image: url("https://www.exagrid.com/wp-content/uploads/2020/09/exagrid-scale-storage-thumbnail.jpg");
     background-repeat: no-repeat;
@@ -46,6 +47,7 @@
       background-color: none;
       font-size: 1rem;
       letter-spacing: 0.025rem;
+      margin-bottom: 1rem;
       &:hover {
         background: #4da82d;
         color: white;
@@ -57,23 +59,32 @@
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-
+  }
+}
+@media (max-width: 1468px) {
+  .container {
     &__text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 3rem 5rem;
-
-      & > h2 {
-        padding: 0rem 2rem;
-      }
-      & > span {
-        margin: 0;
-      }
+      padding: 3rem 5rem 0px 5rem;
       & > button {
-        margin-bottom: 2rem;
+        margin-top: 1rem;
       }
     }
+  }
+}
+@media (max-width: 1248px) {
+  .container {
+    flex-direction: column;
+    &__text {
+      padding: 3rem 5rem 0px 5rem;
+      & > button {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
   }
 }
