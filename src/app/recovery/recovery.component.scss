@@ -98,3 +98,16 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    &__text {
+      padding: 2rem;
+      & > button {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
