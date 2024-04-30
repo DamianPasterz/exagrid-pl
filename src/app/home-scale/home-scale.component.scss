@@ -20,7 +20,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding: 3rem 0px 0px 3rem;
+    padding: 3rem 15rem 0px 5rem;
 
     & > h2 {
       color: #18467f;
@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
     // &__video {
