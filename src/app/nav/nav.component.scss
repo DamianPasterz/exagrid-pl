@@ -65,9 +65,20 @@
 }
 @media (max-width: 768px) {
   .mat-toolbar.mat-primary {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
-  // .sidenav {
-  //   display: none;
-  // }
+}
+@media (max-width: 959px) {
+  .mat-toolbar.mat-primary {
+    padding: 1rem 1rem;
+  }
+}
+@media (max-width: 440px) {
+  .mat-toolbar.mat-primary {
+    padding: 1rem 0.5rem;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+    min-width: 1rem;
+  }
 }
