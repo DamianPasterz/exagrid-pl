@@ -9,6 +9,9 @@
     rgba(247, 249, 253, 0) 75%,
     rgba(247, 249, 253, 0)
   );
+  & > img {
+    height: 350px;
+  }
   &__text {
     margin-top: 5.5rem;
     margin-left: 200px;
@@ -35,10 +38,12 @@
 }
 
 @media (max-width: 768px) {
-  // Zmień wartość 768px na odpowiednią dla Twojego projektu
   .container {
     flex-direction: column-reverse;
     background: #f7f9fd;
+    & > img {
+      height: 250px;
+    }
     &__text {
       margin-left: 0px;
       & > h2 {
