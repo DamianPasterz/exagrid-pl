@@ -59,16 +59,32 @@
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    // &__video {
-    //   display: none;
-    // }
   }
 }
+@media (max-width: 1468px) {
+  .container {
+    &__text {
+      padding: 3rem 5rem 0px 5rem;
+      & > button {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 1248px) {
+  .container {
+    flex-direction: column;
+    &__text {
+      padding: 3rem 5rem 0px 5rem;
+      & > button {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .container {
-    flex-direction: column-reverse;
-    // &__video {
-    //   display: none;
-    // }
+    flex-direction: column;
   }
 }
