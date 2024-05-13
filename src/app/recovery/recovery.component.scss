@@ -92,15 +92,22 @@
     &__video {
       width: 100%;
       min-width: 550px;
-      background-image: url("https://www.exagrid.com/wp-content/uploads/2020/09/exagrid-recovery-20x-faster-thumbnail.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
     }
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 399px) {
   .container {
+    flex-direction: column;
+    &__video {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .container {
+    overflow: hidden;
     flex-direction: column;
     &__text {
       padding: 2rem;
@@ -108,6 +115,13 @@
         margin-top: 1rem;
         margin-bottom: 5rem;
       }
+    }
+    &__video {
+      min-width: 450px;
+      max-height: 300px;
+      background-image: url("https://www.exagrid.com/wp-content/uploads/2020/09/exagrid-recovery-20x-faster-thumbnail.jpg");
+
+      vertical-align: middle;
     }
   }
 }
