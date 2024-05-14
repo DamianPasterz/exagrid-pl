@@ -58,9 +58,17 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 499px) {
   .container {
     flex-direction: column;
+    overflow: hidden;
+
+    &__video {
+      & > img {
+        padding-bottom: 15rem;
+        padding-right: 25rem;
+      }
+    }
 
     &__text {
       display: flex;

@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   background-color: white;
+  overflow: hidden;
 
   &__video {
     display: flex;
@@ -52,6 +53,17 @@
         background: #4da82d;
         color: white;
       }
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .container {
+    flex-direction: column;
+    &__video {
+      min-width: 499px;
+      max-height: 350px;
+      vertical-align: middle;
     }
   }
 }

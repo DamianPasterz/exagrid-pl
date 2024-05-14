@@ -28,7 +28,6 @@ import { HomeScaleComponent } from './home-scale/home-scale.component';
     NavComponent,
     HomeComponent,
     HomeBanerContentComponent,
-    HomeNumberContentComponent,
     WhyExaGridComponent,
     SectionComponent,
     BackupFutureComponent,
@@ -37,6 +36,8 @@ import { HomeScaleComponent } from './home-scale/home-scale.component';
     RecoveryComponent,
     HomeScaleComponent,
   ],
+  providers: [],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -47,8 +48,7 @@ import { HomeScaleComponent } from './home-scale/home-scale.component';
     MatIconModule,
     MatListModule,
     MaterialModule,
+    HomeNumberContentComponent,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}
