@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   justify-content: flex-end;
+  padding: 5px 15px;
   &__image {
     width: 65%;
     height: 90%;
@@ -37,7 +38,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1118px) {
   .container {
     flex-direction: column-reverse;
 

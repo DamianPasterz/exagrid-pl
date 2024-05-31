@@ -21,6 +21,7 @@ import { VideoModalComponent } from './video-modal/video-modal.component';
 import { RansomwareRecoveryComponent } from './ransomware-recovery/ransomware-recovery.component';
 import { RecoveryComponent } from './recovery/recovery.component';
 import { HomeScaleComponent } from './home-scale/home-scale.component';
+import { FootComponent } from './foot/foot.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { HomeScaleComponent } from './home-scale/home-scale.component';
     MatListModule,
     MaterialModule,
     HomeNumberContentComponent,
+    FootComponent,
   ],
 })
 export class AppModule {}

@@ -1,0 +1,23 @@
+.container {
+  background-color: #51616e;
+  color: #fefefe;
+  margin-top: 0;
+  padding: 2rem 15rem;
+  &__grid_4c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    & > p {
+      padding: 0;
+    }
+  }
+}
