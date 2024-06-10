@@ -6,8 +6,14 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './foot.component.html',
-  styleUrls: ['./foot.component.scss']
+  styleUrls: ['./foot.component.scss'],
 })
 export class FootComponent {
+  email: string = 'kontakt@hub4.pl';
+  subject: string = 'Chce przetestować Exagrida';
+  body: string = 'Chce przetestować Exagrida';
 
+  get mailtoLink(): string {
+    return `mailto:${this.email}?subject=${encodeURIComponent(this.subject)}&body=${encodeURIComponent(this.body)}`;
+  }
 }

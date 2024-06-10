@@ -9,7 +9,7 @@
     position="end"
   >
     <mat-nav-list class="nav-list">
-      <a mat-list-item href="/models">Dostepne modele</a>
+      <a mat-list-item href="/models">Dostępne modele</a>
       <a mat-list-item href="/testing">Przetestuj mnie</a>
       <a mat-list-item href="/about">O nas</a>
     </mat-nav-list>
@@ -25,9 +25,14 @@
       </a>
       <span class="example-spacer"></span>
       <mat-nav-list class="nav-menu" *ngIf="!(isHandset$ | async)">
-        <a mat-list-item href="/models">Dostepne modele</a>
+        <a mat-list-item href="/models">Dostępne modele</a>
         <a mat-list-item href="/testing">Przetestuj mnie</a>
-        <a mat-list-item href="/about">O nas</a>
+        <a mat-list-item class="nav-menu__a" href="/about"
+          >O nas<img
+            class="img-logo"
+            src="../../assets/H_Logo.png"
+            height="20px"
+        /></a>
       </mat-nav-list>
       <!-- <span class="example-spacer"></span> -->
       <button

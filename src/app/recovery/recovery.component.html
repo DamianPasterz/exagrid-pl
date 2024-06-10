@@ -1,14 +1,15 @@
 <div class="container">
   <div class="container__video"></div>
   <div class="container__text">
-    <h2>Odtwórz swoje dane 20x szybciej</h2>
-    <span
-      >Dzięki najświeższej kopii danych składowanej na unikalnym
+    <h2 class="Primary_h2">Odtwórz swoje dane 20x szybciej</h2>
+    <p>
+      Dzięki najświeższej kopii danych składowanej na unikalnym
       niezdeduplikowanym obszarze ExaGrida zwanym Landing Zone, uruchamianie
       maszyn wirtualnych lub ich odtwarzanie będzie nawet 20 krotnie szybsze niż
       w produktach konkurencji. Nie wierzysz? Kliknij zakładkę „testuj
       rozwiązanie”.
-    </span>
-    <button (click)="openVideoModal()">testuj rozwiązanie</button>
+    </p>
+
+    <button [routerLink]="['/testing']">testuj rozwiązanie</button>
   </div>
 </div>

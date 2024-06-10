@@ -1,8 +1,8 @@
 <div class="container">
   <div class="container__video" (click)="openVideoModal()"></div>
   <div class="container__text">
-    <h2>Skalujemy się do pojemnosci 6PB</h2>
-    <span>
+    <h2 class="Primary_h2">Skalujemy się do pojemnosci 6PB</h2>
+    <p>
       Exagrid daje Ci możliwość stworzenia klastra o pojemnosci maksymalnej 6PB.
       Klaster jest zestawem macierzy w jednym fizycznym ośrodku przetwarzania
       danych (Data Center). Do budowy Twojego klastra możesz użyć dowolnych
@@ -13,7 +13,7 @@
       Sumujesz. Pojemnosć? Sumujesz. A deduplikacja? Zawsze globalna dla całego
       GRID’a. Okno backupowe? Na pewno stałe, a być może się skróci. Masz
       jeszcze pytania? Kliknij zakładkę „Przetestuj mnie”.
-    </span>
-    <button (click)="openVideoModal()">WIĘCEJ</button>
+    </p>
+    <button [routerLink]="['/testing']">testuj rozwiązanie</button>
   </div>
 </div>

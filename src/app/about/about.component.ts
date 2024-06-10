@@ -15,6 +15,19 @@ import { ModelsDescryptionsComponent } from '../models-descryptions/models-descr
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  public descriptions = `HUB4- zespół ludzi, którzy zajmują się danymi. Backupują, składują, archiwizują, zabezpieczają. Każdy projekt związany z ciągłościa dostępu do danych, backupem czy archiwizacją to nasza codzienność. Na tym się znamy i jesteśmy w tym dobrzy. 
-  Jesteśmy partnerem roku 2022 Exagrida w Polsce , a do tego Centrum Kompetencyjnym Commvaulta.  `;
+  public descriptions = `HUB4- tworzymy systemy, dzięki którym nasi
+  Klienci backupują, składują, archiwizują,
+  przeszukują i zabezpieczają swoje dane.
+  
+  Projekty związane z ciągłością dostępu do
+  danych, backupem czy archiwizacją to nasza
+  codzienność. Na tym się znamy i jesteśmy w
+  tym dobrzy.
+  Jesteśmy partnerem roku 2022 Exagrida w
+Polsce.
+
+Jesteśmy także Centrum Kompetencyjnym
+Commvaulta. Należymy do Klubu Inżyniera
+Commvault, co świadczy o ponadprzeciętnych
+kompetencjach w skali Europy.`;
 }

@@ -58,6 +58,20 @@
   min-width: 5rem;
 }
 
+.nav-menu__a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+  padding-right: 0;
+}
+
+.img-logo {
+  position: absolute;
+  top: 0.9rem;
+  right: 6rem;
+}
+
 @media (min-width: 959px) {
   .sidenav {
     display: none;

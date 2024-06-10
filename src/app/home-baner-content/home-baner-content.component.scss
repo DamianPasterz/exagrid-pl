@@ -1,7 +1,10 @@
 .container {
+  width: 100%;
+  height: 350px;
+  position: relative;
   display: flex;
   justify-content: space-between;
-  z-index: 10;
+
   background: linear-gradient(
     90deg,
     #f7f9fd 0,
@@ -11,17 +14,16 @@
     rgba(247, 249, 253, 0)
   );
   & > img {
+    position: absolute;
     height: 350px;
-    z-index: -1;
+    z-index: -1000;
+    right: 0;
   }
   &__text {
-    margin-top: 5.5rem;
-    margin-left: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #000;
-    width: 100%;
   }
 }
 
@@ -31,7 +33,6 @@
       height: 200px;
     }
     &__text {
-      margin-left: 0px;
       & > h2 {
         margin-left: 1rem;
         margin-right: 1rem;
