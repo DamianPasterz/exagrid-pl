@@ -62,14 +62,17 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  position: relative;
-  padding-right: 0;
+  padding-right: 0.3rem;
+  margin: 0;
+  width: 14rem;
 }
 
 .img-logo {
   position: absolute;
   top: 0.9rem;
-  right: 6rem;
+  right: 1.5rem;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(160deg) brightness(90%)
+    contrast(100%);
 }
 
 @media (min-width: 959px) {
