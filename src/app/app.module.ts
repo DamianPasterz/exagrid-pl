@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -22,11 +21,13 @@ import { RansomwareRecoveryComponent } from './ransomware-recovery/ransomware-re
 import { RecoveryComponent } from './recovery/recovery.component';
 import { HomeScaleComponent } from './home-scale/home-scale.component';
 import { FootComponent } from './foot/foot.component';
+import { ModelBanerContentComponent } from './model-baner-content/model-baner-content.component';
+import { MenuComponent } from './menu/menu.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
     HomeComponent,
     HomeBanerContentComponent,
     WhyExaGridComponent,
@@ -36,18 +37,17 @@ import { FootComponent } from './foot/foot.component';
     RansomwareRecoveryComponent,
     RecoveryComponent,
     HomeScaleComponent,
+    MenuComponent,
+    SideBarComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
   imports: [
     BrowserModule,
+    ModelBanerContentComponent,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
+
     MaterialModule,
     HomeNumberContentComponent,
     FootComponent,

@@ -1,1 +1,12 @@
-<app-nav> <router-outlet></router-outlet> <app-foot></app-foot></app-nav>
+<!-- <app-nav> -->
+<div class="container-app">
+  <app-menu></app-menu>
+  <div class="router_container">
+    <router-outlet></router-outlet>
+  </div>
+  <app-foot (click)="closeSidebar()"> </app-foot>
+  <app-side-bar
+    [class.openModal]="isSidebarOpen"
+    (click)="closeSidebar()"
+  ></app-side-bar>
+</div>

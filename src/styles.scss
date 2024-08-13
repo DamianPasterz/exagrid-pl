@@ -9,7 +9,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   padding: 0;
   margin: 0 !important;
   font-family: "Raleway", Roboto, Helvetica, Arial, sans-serif;
@@ -20,16 +20,15 @@ html {
   font-size: 16px;
 }
 
-.mdc-list-item__primary-text {
-  color: #18467f !important;
-  font-size: 1rem;
-  font-weight: 700 !important;
-}
-
 .Primary_h2 {
   color: #18467f !important;
   font-weight: 400 !important;
   line-height: 1.2 !important;
   font-size: 3.5rem !important;
   margin-bottom: 1.6rem !important;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 27.9px;
 }

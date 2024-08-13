@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="container__left">
+    <img
+      class="header-logo"
+      src="https://www.exagrid.com/wp-content/uploads/2020/09/exagrid-logo.png"
+      alt="logo"
+      [routerLink]="['/']"
+    />
+  </div>
+  <div class="container__center">
+    <p [routerLink]="['/models']">Dostępne modele</p>
+    <p [routerLink]="['/testing']">Przetestuj mnie</p>
+    <p class="nav-menu__a" [routerLink]="['/about']">
+      O nas<img class="img-logo" src="../../assets/H_Logo.png" height="20px" />
+    </p>
+  </div>
+  <div class="container__right">
+    <img
+      class="header-logo"
+      src="../../assets/nav.svg"
+      alt="logo"
+      (click)="openSidebar()"
+    />
+  </div>
+</div>

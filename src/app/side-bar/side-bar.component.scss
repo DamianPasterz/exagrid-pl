@@ -1,0 +1,11 @@
+.container {
+  background-color: #fefefe;
+  box-shadow: inset 13px 0 20px -13px hsla(0, 0%, 4%, 0.25);
+  height: 100%;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  & > p {
+    color: #18467f;
+    cursor: pointer;
+  }
+}

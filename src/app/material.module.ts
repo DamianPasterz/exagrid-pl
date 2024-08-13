@@ -15,24 +15,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
-const material = [
-  MatCommonModule,
-  MatIconModule,
-  MatButtonModule,
-  MatSliderModule,
-  MatDividerModule,
-  MatInputModule,
-  MatSelectModule,
-  MatSnackBarModule,
-  MatProgressSpinnerModule,
-  MatTabsModule,
-  MatDialogModule,
-  MatGridListModule,
-  MatExpansionModule,
-  MatSlideToggleModule,
-  MatMenuModule,
-  MatCardModule,
-];
+const material = [MatCommonModule, MatDialogModule];
 @NgModule({
   imports: [...material],
   exports: [...material],

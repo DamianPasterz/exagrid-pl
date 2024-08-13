@@ -2,10 +2,11 @@
   <swiper-container
     class="mySwiper"
     init="true"
-    autoplay-delay="1500"
     slides-per-view="4"
     css-mode="true"
     loop="true"
+    space-between="300"
+    autoplay-delay="200"
   >
     <swiper-slide *ngFor="let image of images">
       <img [src]="image" />

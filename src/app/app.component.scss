@@ -1,0 +1,45 @@
+.container-app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  width: 100dvw;
+  height: 100dvh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+app-side-bar {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  right: 0;
+
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.openModal {
+  width: 15rem;
+}
+
+app-menu {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100dvw;
+}
+
+.router_container {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100dvw;
+  height: 100%;
+}
+
+app-foot {
+  grid-column: 1;
+  grid-row: 3;
+  width: 100dvw;
+  height: 100%;
+}

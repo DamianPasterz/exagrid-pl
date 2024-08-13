@@ -4,12 +4,10 @@
   justify-content: flex-start;
   flex-direction: column;
   background-color: #b1c9e8;
-  padding: 2rem 15rem;
+  padding: 2rem 5rem;
 
   & > p {
     color: rgb(10, 10, 10);
-    font-size: 1.5rem;
-    line-height: 27.9px;
   }
   & > button {
     all: unset;
@@ -34,16 +32,16 @@
 
 @media (max-width: 782px) {
   .container {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
   }
 }
 @media (max-width: 1468px) {
   .container {
-    padding: 2rem 10rem;
+    padding: 2rem 8rem;
   }
 }
 @media (max-width: 1268px) {
   .container {
-    padding: 2rem 6rem;
+    padding: 2rem 5rem;
   }
 }

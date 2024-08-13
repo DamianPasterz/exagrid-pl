@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModelBanerContentComponent } from '../model-baner-content/model-baner-content.component';
 import { ModelsDescryptionsComponent } from '../models-descryptions/models-descryptions';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-testing-me',
@@ -16,6 +17,11 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./testing-me.component.scss'],
 })
 export class TestingMeComponent {
+  globalService = inject(GlobalService);
+
+  closeSidebar() {
+    this.globalService.closeSidebar();
+  }
   public descriptions = `Jeszcze nigdy testowanie nie było tak sprawne logistycznie.
 
   Daj mi znać, że chcesz przetestować rozwiązanie. Równolegle będę potrzebował od Ciebie informacji na temat Twojego środowiska backupu: pojemność full backupu oraz określenie retencji dla składowanych danych. Jeśli potrzebujesz konkretnej wydajności odtwarzania – napisz mi o tym. Wyskaluję dla Ciebie rozwiązanie i za 2 tygodnie przyjedzie do Ciebie nowe urządzenie- takie, jakiego potrzebujesz.

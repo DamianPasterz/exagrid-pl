@@ -1,5 +1,9 @@
-<app-model-baner-content [title]="'Modele'"></app-model-baner-content>
+<app-model-baner-content
+  [title]="'Modele'"
+  (click)="closeSidebar()"
+></app-model-baner-content>
 <app-models-descryptions
   [descryptions]="descriptions"
   [img]="'../../assets/models.png'"
+  (click)="closeSidebar()"
 ></app-models-descryptions>
